@@ -79,4 +79,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/mypalesong/mkdocs
 
+extra_css:
+  - stylesheets/extra.css
+
 copyright: Copyright &copy; 2024 Ontology Guide

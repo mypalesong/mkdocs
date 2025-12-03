@@ -1,0 +1,376 @@
+/* Custom styles for Ontology Guide */
+
+/* ===== Hero Section ===== */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    color: white !important;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ===== Feature Cards ===== */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.feature-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f5f7fa 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #667eea;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card.green { border-left-color: #4CAF50; }
+.feature-card.orange { border-left-color: #FF9800; }
+.feature-card.blue { border-left-color: #2196F3; }
+.feature-card.purple { border-left-color: #9C27B0; }
+.feature-card.red { border-left-color: #f44336; }
+.feature-card.teal { border-left-color: #009688; }
+
+.feature-card h3 {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ===== Image Cards ===== */
+.img-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    margin: 1.5rem 0;
+}
+
+.img-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.img-card-content {
+    padding: 1.5rem;
+    background: white;
+}
+
+/* ===== Stats Section ===== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* ===== Colored Boxes ===== */
+.info-box {
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.info-box.blue {
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    border-left: 4px solid #2196F3;
+}
+
+.info-box.green {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    border-left: 4px solid #4CAF50;
+}
+
+.info-box.orange {
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+    border-left: 4px solid #FF9800;
+}
+
+.info-box.purple {
+    background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+    border-left: 4px solid #9C27B0;
+}
+
+.info-box.red {
+    background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+    border-left: 4px solid #f44336;
+}
+
+/* ===== Timeline ===== */
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    margin: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+    border-radius: 3px;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 1rem 0;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background: #667eea;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px #667eea;
+}
+
+/* ===== Badges ===== */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0.25rem;
+}
+
+.badge.blue { background: #e3f2fd; color: #1976D2; }
+.badge.green { background: #e8f5e9; color: #388E3C; }
+.badge.orange { background: #fff3e0; color: #F57C00; }
+.badge.purple { background: #f3e5f5; color: #7B1FA2; }
+.badge.red { background: #ffebee; color: #D32F2F; }
+.badge.gray { background: #f5f5f5; color: #616161; }
+
+/* ===== Gradient Text ===== */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.gradient-text.green {
+    background: linear-gradient(135deg, #4CAF50 0%, #8BC34A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text.orange {
+    background: linear-gradient(135deg, #FF9800 0%, #FFC107 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Callout Boxes ===== */
+.callout {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+}
+
+.callout.highlight {
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    border: 1px solid #667eea40;
+}
+
+.callout-icon {
+    font-size: 2rem;
+}
+
+/* ===== Image with overlay ===== */
+.img-overlay-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.img-overlay-container img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+}
+
+.img-overlay h3 {
+    margin: 0;
+    color: white;
+}
+
+/* ===== Icon Grid ===== */
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.icon-item {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.icon-item:hover {
+    background: #667eea;
+    color: white;
+}
+
+.icon-item .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== Process Flow ===== */
+.process-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.process-step {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.process-arrow {
+    color: #667eea;
+    font-size: 1.5rem;
+}
+
+/* ===== Comparison Table ===== */
+.comparison-table {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.comparison-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+}
+
+.comparison-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* ===== Quote Block ===== */
+.quote-block {
+    position: relative;
+    padding: 2rem;
+    padding-left: 3rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 12px;
+    margin: 2rem 0;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.quote-block::before {
+    content: '"';
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    font-size: 4rem;
+    color: #667eea;
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+.quote-author {
+    margin-top: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #667eea;
+}
+
+/* ===== Dark mode adjustments ===== */
+[data-md-color-scheme="slate"] .feature-card {
+    background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+[data-md-color-scheme="slate"] .stat-card {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+[data-md-color-scheme="slate"] .info-box.blue {
+    background: linear-gradient(135deg, #1a237e30 0%, #1565c030 100%);
+}
+
+[data-md-color-scheme="slate"] .info-box.green {
+    background: linear-gradient(135deg, #1b5e2030 0%, #2e7d3230 100%);
+}
+
+[data-md-color-scheme="slate"] .quote-block {
+    background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+}
