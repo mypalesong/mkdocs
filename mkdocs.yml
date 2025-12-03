@@ -46,6 +46,12 @@ nav:
   - Modern Applications:
     - Ontology in Computer Science: applications/computer-science.md
     - Knowledge Representation: applications/knowledge-representation.md
+  - "Case Study: 슈퍼마켓":
+    - 개요: case-study/index.md
+    - 도메인 모델링: case-study/domain-modeling.md
+    - 인프라 구축: case-study/infrastructure.md
+    - 구현 가이드: case-study/implementation.md
+    - 활용 사례: case-study/use-cases.md
 
 markdown_extensions:
   - pymdownx.highlight:
