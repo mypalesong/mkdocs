@@ -1,0 +1,76 @@
+site_name: Ontology Guide
+site_description: A comprehensive guide to ontology - the study of being and existence
+site_author: Ontology Guide Team
+site_url: https://mypalesong.github.io/mkdocs/
+
+theme:
+  name: material
+  language: ko
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Introduction:
+    - What is Ontology?: introduction/what-is-ontology.md
+    - History of Ontology: introduction/history.md
+  - Core Concepts:
+    - Being and Existence: concepts/being-and-existence.md
+    - Categories of Being: concepts/categories.md
+    - Properties and Relations: concepts/properties-relations.md
+  - Philosophical Traditions:
+    - Western Ontology: traditions/western.md
+    - Eastern Ontology: traditions/eastern.md
+  - Modern Applications:
+    - Ontology in Computer Science: applications/computer-science.md
+    - Knowledge Representation: applications/knowledge-representation.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.mark
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang:
+        - en
+        - ko
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mypalesong/mkdocs
+
+copyright: Copyright &copy; 2024 Ontology Guide
